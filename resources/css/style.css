@@ -30,8 +30,12 @@ h2 {
 .container {
 	display: flex;
 	align-items: center;
-	max-width: 960px;
 	margin: auto;
+	max-width: 960px;
+}
+
+.mobile {
+	display: none;
 }
 
 
@@ -76,10 +80,10 @@ nav ul li {
 }
 
 .title {
-	padding: 1.5rem 5rem;
 	background-color: white;
 	margin-top: 10rem;
 	margin-right: -2rem;
+	padding: 1.5rem 5rem;
 }
 
 
@@ -151,5 +155,53 @@ footer {
 
 footer img {
 	height: 1.5rem;
-	margin-right: 1rem;
+	margin-rights: 1rem;
+}
+
+
+/*Media Queries*/
+
+@media only screen and (max-width: 800px) {
+
+	header {
+		height: 23rem;
+	}
+
+	.container {
+		max-width: 100%;
+	}
+
+	.title {
+		font-size: 1.33rem;
+		padding: 0.75rem 4rem;
+		margin-top: 5rem;
+		margin-right: 2rem;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+
+	header {
+		background-position: 20%;
+		background-size: cover;
+		padding-top: 1rem;
+		height: 17rem;
+	}
+
+	.title {
+		font-size: 1rem;
+		text-align: center;
+		padding: 1rem;
+		margin-top: 9rem;
+		margin-right: 0;
+		width: 100%;
+	}
+
+	.desktop {
+		display: none;
+	}
+
+	.mobile {
+		display: flex;
+	}
 }
